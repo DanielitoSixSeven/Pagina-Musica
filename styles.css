@@ -1,0 +1,132 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #0d0d0d;
+    color: white;
+}
+header{
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+header h1{
+    margin: 0;
+}
+header p{
+    margin: 10px;
+}
+nav{
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+header h1{
+    margin: 0px;
+}
+main
+{
+width: 80%;
+max-width: 900px;
+margin: 30px auto;
+}
+img {
+    display: block;
+}
+
+section {
+    margin-bottom: 80px;
+    scroll-margin-top: 70px;
+}
+section h2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.artistas-contenedor {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.principal {
+    flex: 0 0 42%;
+    border-radius: 10px;
+    padding: 16px;
+    transition: background-color 0.2s;
+}
+
+
+.principal img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.principal img:hover{
+    transform: scale(1.1);
+}
+
+.secundarios {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    min-width: 0;
+}
+.secundarios article {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 0;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+.secundarios img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+.lista-canciones {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    gap: 8px 24px;
+}
+.cancion {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+.cancion img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
